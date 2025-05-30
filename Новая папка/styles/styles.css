@@ -1,0 +1,12 @@
+/*подключение шрифтов */
+@import "font.css";
+/*подключение основнных стилей */
+@import "base.css";
+/*подключение обертки */
+@import "typography.css";
+/* Подключение стилей относящихся к header */
+@import "header.css";
+/* Подключение стилей относящихся к footer */
+@import "footer.css";
+/* Подключение стилей относящихся к main */
+@import "main.css";

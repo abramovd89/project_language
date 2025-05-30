@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lingua - Школа иностранных языков</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body class="container">
+    <header class="header">
+        <a class="header__logo">Lingua</a>
+       <!--<nav class="header__nav">
+            <ul class="header__list">
+                <li class="header__item"><a class="header__item--link" href="#promo">Главная</a></li>
+                <li class="header__item"><a class="header__item--link" href="#teachers">Преподаватели</a></li>
+                <li class="header__item"><a class="header__item--link" href="#courses">Курсы</a></li>
+                <li class="header__item"><a class="header__item--link" href="#reviews">Отзывы</a></li>
+                <li class="header__item"><a class="header__item--link" href="#contacts">Контакты</a></li>
+            </ul>
+        </nav>
+    -->
+        <button class="header__button" id="authButton" type="button">Войти</button>
+    </header>
+
+    <!-- Модальное окно входа/регистрации -->
+<div class="modal" id="authModal">
+    <div class="modal__content" id="loginForm">
+        <span class="modal__close">&times;</span>
+        <h2 class="modal__title">Вход</h2>
+        <form class="modal__form">
+            <input type="email" placeholder="Email" required>
+            <input type="password" placeholder="Пароль" required>
+            <button type="submit" class="modal__submit">Войти</button>
+            <p class="modal__text">Или</p>
+            <button type="button" class="modal__switch" id="showRegisterBtn">Создать аккаунт</button>
+        </form>
+    </div>
+    
+    <div class="modal__content" id="registerForm" style="display:none;">
+        <span class="modal__close">&times;</span>
+        <h2 class="modal__title">Регистрация</h2>
+        <form class="modal__form">
+            <input type="text" placeholder="Имя" required>
+            <input type="email" placeholder="Email" required>
+            <input type="password" placeholder="Пароль" required>
+            <input type="password" placeholder="Подтвердите пароль" required>
+            <button type="submit" class="modal__submit">Зарегистрироваться</button>
+            <p class="modal__text">Уже есть аккаунт?</p>
+            <button type="button" class="modal__switch" id="showLoginBtn">Войти</button>
+        </form>
+    </div>
+</div>
+    <main class="main">
+        <!-- Главный экран -->
+      <section class="section__promo" id="promo">
+        <div class="promo__content">
+            <h1 class="promo__title">Начните свободно говорить на иностранном языке</h1>
+            <p class="promo__text">Интерактивные курсы с носителями языка для быстрого результата</p>
+            <div class="promo__buttons">
+                <a href="#authModal" class="promo__button" id="startLearningBtn">Начать обучение</a>
+                <a href="#authModal" class="promo__info" id="freeLessonBtn">Бесплатный урок</a>
+            </div>
+            <button class="feedback-btn" id="feedbackBtn">Оставить отзыв</button>
+        </div>
+        <div class="promo__images">
+            <img class="promo__main-image" src="images/language_learning.jfif" alt="Изучение языков">
+            <div class="promo__stats">
+                <div class="stat-item">
+                    <span class="stat-number">10 000+</span>
+                    <span class="stat-text">Довольных студентов</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">50+</span>
+                    <span class="stat-text">Профессиональных преподавателей</span>
+                </div>
+            </div>
+        </div>
+    </section>
+        <!-- Блок преимуществ -->
+        <section class="benefits" id="teachers">
+            <h2 class="section-title">Почему выбирают нас</h2>
+            <div class="benefits__grid">
+                <div class="benefit-card">
+                    <i class="fas fa-user-tie benefit-icon"></i>
+                    <h3>Носители языка</h3>
+                    <p>Все преподаватели - дипломированные специалисты с международными сертификатами</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-calendar-alt benefit-icon"></i>
+                    <h3>Гибкое расписание</h3>
+                    <p>Занимайтесь в удобное время из любой точки мира</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-chart-line benefit-icon"></i>
+                    <h3>Гарантия результата</h3>
+                    <p>98% студентов достигают поставленных целей в срок</p>
+                </div>
+            </div>
+        </section>
+    <!-- Курсы -->
+    <section class="courses" id="courses">
+        <h2 class="section-title">Наши курсы</h2>
+        <div class="courses-container">
+            <div class="course-card active">
+                <img src="images/English.jpg" alt="Курс английского" class="course-image">
+                <h3>Английский язык</h3>
+                <p>Начните свободно говорить за 3 месяца</p>
+                <button class="course-btn">Подробнее</button>
+            </div>
+            <div class="course-card">
+                <img src="images/french.jpg" alt="Курс французского" class="course-image">
+                <h3>Французский язык</h3>
+                <p>Язык любви и искусства</p>
+                <button class="course-btn">Подробнее</button>
+            </div>
+            <div class="course-card">
+                <img src="images/brazil.jpg" alt="Курс португальского" class="course-image">
+                <h3>Португальский язык</h3>
+                <p>Яркий и страстный португальский</p>
+                <button class="course-btn">Подробнее</button>
+            </div>
+            <div class="course-card">
+                <img src="images/spanish.jpg" alt="Курс испанского" class="course-image">
+                <h3>Испанский язык</h3>
+                <p>Один из самых популярных языков в мире</p>
+                <button class="course-btn">Подробнее</button>
+            </div>
+            <div class="course-card">
+                <img src="images/german.jpg" alt="Курс немецкого" class="course-image">
+                <h3>Немецкий язык</h3>
+                <p>Язык науки и технологий</p>
+                <button class="course-btn">Подробнее</button>
+            </div>
+            <div class="course-card">
+                <img src="images/japan.jpg" alt="Курс японского" class="course-image">
+                <h3>Японский язык</h3>
+                <p>Погрузитесь в культуру Страны восходящего солнца</p>
+                <button class="course-btn">Подробнее</button>
+            </div>
+            <div class="course-card">
+                <img src="images/china.jpg" alt="Курс китайского" class="course-image">
+                <h3>Китайский язык</h3>
+                <p>Откройте для себя самый распространенный язык в мире</p>
+                <button class="course-btn">Подробнее</button>
+            </div>
+            <div class="course-card">
+                <img src="images/italian.jpg" alt="Курс итальянского" class="course-image">
+                <h3>Итальянский язык</h3>
+                <p>Язык искусства, моды и кухни</p>
+                <button class="course-btn">Подробнее</button>
+            </div>
+            <div class="course-card">
+                <img src="images/arab.jpg" alt="Курс арабского" class="course-image">
+                <h3>Арабский</h3>
+                <p>Изучайте богатую культуру и литературу</p>
+                <button class="course-btn">Подробнее</button>
+            </div>
+        </div>
+        <div class="course-nav">
+            <button class="nav-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
+            <div class="dots-container"></div>
+            <button class="nav-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </section>
+        <!-- Отзывы -->
+        <section class="reviews" id="reviews">
+            <h2 class="section-title">Отзывы</h2>
+            <div class="reviews-container">
+                <div class="review">
+                    <div class="review-author">Александра</div>
+                    <div class="review-text">Курс понравился: информация понятно и ёмко скомпонована. После курса многое оседает в голове, а это именно то, что необходимо. Преподаватель очень понравилась. Материал объясняет доступно, много раз повторяет, разъясняет и уточняет, чтобы вопросов не оставалось.</div>
+                </div>
+                <div class="review">
+                    <div class="review-author">Мария</div>
+                    <div class="review-text">Очень жалею, что не попала в эту школу раньше. Только сейчас, по этой методике, немного стала понимать английский язык. Отношение преподавателя к обучающимся выше всяких похвал!</div>
+                </div>
+                <div class="review">
+                    <div class="review-author">Максим</div>
+                    <div class="review-text">Курс прошёл в очень тёплой и веселой атмосфере, на протяжении всего курса всё было ясно и понятно. Преподаватель очень доброжелательная и отзывчивая.</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA секция -->
+        <section class="cta-section">
+            <div class="cta-content">
+                <h2>Готовы начать свое языковое путешествие?</h2>
+                <p>Пройдите бесплатный тест и получите персональную программу обучения</p>
+                <button class="cta-button">Получить программу</button>
+            </div>
+            <img class="cta-image" src="images/travel.jpg" alt="Изучение языков с Lingua">
+        </section>
+    </main>
+
+    <footer class="footer" id="contacts">
+        <div class="footer__content">
+            <div class="footer__info">
+                <h3 class="footer__title">Lingua</h3>
+                <p class="footer__text">Изучайте языки с лучшими преподавателями</p>
+                <div class="footer__contacts">
+                    <p><i class="fas fa-envelope"></i> Email: info@lingua.ru</p>
+                    <p><i class="fas fa-phone"></i> Телефон: +7 (123) 456-78-90</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Адрес: г. Йошкар-Ола</p>
+                </div>
+                <div class="footer__social">
+                    <a href="https://vk.com" target="_blank" class="social__link"><i class="fab fa-vk"></i></a>
+                    <a href="https://telegram.org" target="_blank" class="social__link"><i class="fab fa-telegram"></i></a>
+                </div>
+            </div>
+            <div class="footer__links">
+                <h3>Быстрые ссылки</h3>
+                <ul>
+                    <li><a href="#promo">Главная</a></li>
+                    <li><a href="#teachers">Преподаватели</a></li>
+                    <li><a href="#courses">Курсы</a></li>
+                    <li><a href="#reviews">Отзывы</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__copyright">
+            &copy; 2023 Lingua. Все права защищены.
+            Автор - Абрамов Дмитрий
+        </div>
+    </footer>
+
+    <!-- Модальное окно отзыва -->
+    <div class="modal" id="feedbackModal">
+        <div class="modal__content">
+            <span class="modal__close">&times;</span>
+            <h2 class="modal__title">Оставить отзыв</h2>
+            <p>Чтобы оставить отзыв, пожалуйста, войдите или зарегистрируйтесь</p>
+            <button class="modal__switch" id="goToAuth">Войти</button>
+        </div>
+    </div>
+
+    <!-- Кнопка наверх -->
+    <button class="scroll-top" id="scrollTopBtn">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>

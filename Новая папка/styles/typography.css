@@ -1,0 +1,21 @@
+.button {
+    font-family: Amatic;
+    font-size: 16px;
+    font-weight: 600;
+
+    background-color: #800080;
+    color: #fefeff;
+
+    border: 0;
+    border-radius: 8px;
+    padding: 12px 18px;
+
+    cursor: pointer;
+    
+}
+
+/* Контейнер обертка */
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}

@@ -1,0 +1,87 @@
+/* Подвал */
+.footer {
+    background-color: #2c3e50;
+    color: white;
+    padding: 60px 0 20px;
+}
+
+.footer__content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer__info {
+    flex: 1;
+    min-width: 300px;
+}
+
+.footer__title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.footer__text {
+    margin-bottom: 20px;
+    color: #bdc3c7;
+}
+
+.footer__contacts p {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer__social {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social__link {
+    color: white;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.social__link:hover {
+    color: #3498db;
+}
+
+.footer__links {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer__links h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.footer__links ul {
+    list-style: none;
+}
+
+.footer__links li {
+    margin-bottom: 10px;
+}
+
+.footer__links a {
+    color: #bdc3c7;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer__links a:hover {
+    color: white;
+}
+
+.footer__copyright {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #34495e;
+    color: #bdc3c7;
+}
